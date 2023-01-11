@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("../img/fondo.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    width: 100%;
+}
+
+/* INDEX */
+
+.flex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imagen img{
+    border: 2px solid rgb(0, 0, 0);
+    width: 500px;
+}
+
+footer{
+    padding: 20px;
+    background-color: rgb(32, 32, 32);
+    margin-bottom: 0;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.redes .color{
+    background-color: white;
+    border-radius: 100%;
+}
+
+/* NOSOTROS */
+
+.unidos{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.antigua{
+    width: 95vw;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.caja{
+    background: white;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    line-height: 35px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.como-lo-hacemos{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    background: whitesmoke;
+}
+
+.caja-frutas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    padding: 10px;
+}
+
+.materia-prima, .subtitulo{
+    color: #124956;
+}
+
+.frutas{
+    width: 90vw;
+    margin: 10px;
+}
+
+@media (min-width: 500px){
+    .antigua{
+        width: 95vw;
+        height: 95%;
+    }
+
+    .caja{
+        padding: 10px;
+    }
+
+    .historia{
+        font-size: 1.8em;
+        line-height: 2em;
+    }
+
+    .caja-frutas{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .subtitulo{
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 768px){
+    .historia{
+        font-size: 2em;
+    }
+
+    .subtitulo{
+        color: #124956;
+    }
+
+    .materia-prima{
+        font-size: 1.8em;
+        margin: 5px;
+        color: #124956;
+    }
+}
+
+@media (min-width: 1024px){
+    .unidos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        margin: 10px;
+    }
+
+    .antigua{
+        width: 50vw;
+        height: 100%;
+    }
+
+    .historia{
+        font-size: 1.8em;
+        text-align: center;
+        color: #124956;
+    }
+
+    .como-lo-hacemos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        margin: 10px;
+    }
+
+    .subtitulo{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .frutas{
+        width: 50vw;
+        height: 90%;
+        border: 2px solid black;
+    }
+
+    .materia-prima{
+        text-align: center;
+    }
+}
+
+/* HISTORIA */
+.video{
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-ancho{
+    height: 90vh;
+    width: 90vw;
+}
+
+iframe{
+    border: 5px solid black;
+}
+/* CONTACTO */
+
+form{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #24303c;
+    width: 70%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 5% 0;
+}
+
+.registro-titulo{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controles{
+    margin: 5px;
+    width: 100%;
+    height: 3em;
+    background: #24303c;
+    border-radius: 4px;
+    border: 1px solid #1f53c5;
+}
+
+.textarea{
+    margin: 3px;
+    width: 100%;
+    background: #24303c;
+    border: 1px solid #1f53c5;
+}
+
+.registro-titulo{
+    color: white;
+}
+
+.boton{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/* PRODUCTO */
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.ancho{
+    width: 50vw;
+}
+
+h2{
+    text-decoration-line: underline;
+}
+
+.list-style, h2{
+    list-style-type: circle;
+    color: white;
+}
+
+.img-producto-right, .img-producto-left{
+    display: block;
+    margin: 5px auto;;
+    border: 2px solid black;
+
+}
+
+.chocolate, .dulce_de_leche{
+    background-color: #1E90FF;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.crema, .frutales{
+    background-color: #1E90FF;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.paletas{
+    background-color: #124956;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paletas-ancho{
+    width: 80vw;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.paletas-h, .paletas-l{
+    list-style-type: circle;
+    text-align: start;
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 500px){
+    .chocolate, .dulce_de_leche, .crema, .frutales{
+        border: 2px solid black;
+        background-image: url(../img/tarjeta-fondo.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .chocolate, .dulce_de_leche, .crema, .frutales{
+        width: 90%;
+    }
+
+    .img-producto-right, .img-producto-left{
+        width: 35vw;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;;
+    }
+
+    .paletas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .paletas-ancho{
+        width: 50vw;
+        margin: 10px;
+    }
+
+    .paletas-l{
+        list-style-position: inside;
+    }
+
+    .box:hover{
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+}
