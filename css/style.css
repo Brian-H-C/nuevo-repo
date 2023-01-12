@@ -280,6 +280,8 @@ h2{
 
 .chocolate, .dulce_de_leche{
     background-color: #1E90FF;
+    background-image: url(../img/tarjeta-fondo.jpg);
+    background-size: 100% 100%;
     margin: 5px;
     padding: 10px;
     border-radius: 5%;
@@ -287,6 +289,8 @@ h2{
 
 .crema, .frutales{
     background-color: #1E90FF;
+    background-image: url(../img/tarjeta-fondo.jpg);
+    background-size: 100% 100%;
     margin: 5px;
     padding: 10px;
     border-radius: 5%;
